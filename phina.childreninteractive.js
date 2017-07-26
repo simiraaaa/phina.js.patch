@@ -1,4 +1,4 @@
-phina.app.Element.prototype.$method('init', function(options) {
+phina.app.Object2D.prototype.$method('init', function(options) {
   this.superInit();
 
   options = ({}).$safe(options, phina.app.Object2D.defaults);
@@ -22,8 +22,8 @@ phina.app.Element.prototype.$method('init', function(options) {
   this.radius = options.radius;
   this.boundingType = options.boundingType;
 });
-phina.app.Element.defaults.interactive = false;
-phina.app.Element.defaults.childrenInteractive = true;
+phina.app.Object2D.defaults.interactive = false;
+phina.app.Object2D.defaults.childrenInteractive = true;
 
 phina.app.Interactive.prototype.$method('_checkElement', function(element) {
   var app = this.app;
