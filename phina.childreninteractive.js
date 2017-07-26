@@ -41,7 +41,7 @@ phina.app.Interactive.prototype.$method('_checkElement', function(element) {
   }
 
   // タッチ判定
-  if (obj.interactive) this._checkPoint(element);
+  if (element.interactive) this._checkPoint(element);
 });
 
 phina.app.Interactive.prototype.$method('__checkPoint', function(obj, p) {
